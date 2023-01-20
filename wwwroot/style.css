@@ -1,0 +1,93 @@
+.head {
+    background-color: brown;
+    text-align: center;
+    padding: 5px;
+    color: wheat;
+    font-size: 30px;
+    font-family: 隶书;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color:darkred;
+    font-family: 隶书;
+    font-size: 20px;
+}
+
+.topnav a{
+    float: left;
+    color: whitesmoke;
+    display: block;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+.topnav a:hover{
+    background-color: wheat;
+    color: brown;
+}
+
+.logining {
+    font-family: 隶书;
+    background-color: antiquewhite;
+    margin-top: 4%;
+    margin-left: 5%;
+    color: brown;
+    text-align: center;
+    width: 1290px;
+    height: 390px;    
+    padding: 15px;
+    border: 1px solid brown;
+    border-radius: 30px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-text{
+    display: none;
+    position: relative;
+    background-color: wheat;
+    box-shadow: 8px 8px 8px 0px;
+    color: brown;
+}
+
+.dropdown:hover .dropdown-text{
+    display: flex;
+}
+
+.buttom{
+    font-family: 隶书;
+    border-style: solid;
+    border-color: brown;
+    border-radius: 25px;
+    background-color: brown;
+    color:wheat;
+    font-size: medium;
+    padding: 10px;
+}
+
+.buttom:hover{
+    background-color: wheat;
+    color:brown;
+}
+
+.buttom a{
+    text-decoration: none;
+    color: wheat;
+}
+
+.buttom a:hover{
+    color: brown;
+}
+
+.input{
+    font-family: 隶书;
+    width: 150px;
+    height: 25px;
+    border-radius: 25px;
+    border-color: brown;
+    border-style: solid
+}
