@@ -4,12 +4,19 @@ import (
 	"net/http"
 )
 
-func main() {
+var books struct {
+	name    string
+	isbn    string
+	author  string
+	publish string
+}
 
-	/*http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		w.Write([]byte("hello world"))
-	})*/
-	//http.ListenAndServe("localhost:8080", nil) //DefaultSeverMux
+var user struct {
+	username string
+	key      string
+}
+
+func main() {
 	sever := http.Server{
 		Addr:    "localhost:8080",
 		Handler: nil,
