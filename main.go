@@ -2,13 +2,19 @@ package main
 
 import (
 	"net/http"
+	"os"
 )
 
 var books struct {
-	name    string
-	isbn    string
-	author  string
-	publish string
+	name      string
+	isbn      string
+	author    string
+	publish   string
+	time      string
+	page      int
+	price     int
+	introduce string
+	b_t       int
 }
 
 var user struct {
@@ -16,7 +22,13 @@ var user struct {
 	key      string
 }
 
+func loaging() {
+	file1, _ := os.Open("./txt/user")
+	defer file1.Close()
+}
+
 func main() {
+	loaging()
 	sever := http.Server{
 		Addr:    "localhost:8080",
 		Handler: nil,
